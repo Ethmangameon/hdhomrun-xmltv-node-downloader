@@ -2,7 +2,7 @@ This is a node js script to automatically download xmltv data from the HD-Homrun
 
 The intended install is intended for a jellyfin on an lxc or linux system; however it should be fine to use on windows if you know what you are doing.
 
-<h1> Install instructions </h1>
+Install instructions
 
 Please, remove the .example file extension from the .env.example file.
 Then enter the IPV4 address of the HD-Homerun Tuner into the .env file. (You will need the tv guide subscription)
