@@ -16,7 +16,7 @@ This slowly created a problem since I didn't maintain this like I thought I woul
 3. Install NodeJS, then execute "run.sh" to ensure that node.js is working and, to make sure the script works. [^1]
 [^1]: It should produce a "xmltv.tv" file in the roort diretory.
 5. Create a automatic service/cron entry to automatically start the run.sh script on a schedule. [^2]
-[^2]: You may need to modify the run.sh script to fit your needs.
+[^2]: You may need to modify the "run.sh" script to fit your needs.
 > [!WARNING]
 > If you did not run the script the "xmltv.xml" file will not be in this directory.
 5. Set the live-tv channel guide to this directory and the xmltv.xml file.
