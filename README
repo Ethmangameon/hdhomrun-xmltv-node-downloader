@@ -6,6 +6,7 @@ Install instructions
 
 Please, remove the .example file extension from the .env.example file.
 Then enter the IPV4 address of the HD-Homerun Tuner into the .env file. (You will need the tv guide subscription)
+Install NodeJS, then run "run.sh" to ensure that node.js is working; and to make sure the script works.
 Set a automatic service/cron (cannot do this on windows) entry to automatically start the run.sh script on a timer.
 Set the live-tv channel guide to this directory and the xmltv.xml file.
 Set a Scheduled task in Jellyfin to update channel guide for after this has been updated.

@@ -14,29 +14,30 @@ dotenv.config();
 wget({
     url:  `http://${process.env.LOCALIP}/discover.json`,     
     dest: './',
-    timeout: 2000       
+    timeout: 250       
 });
 
 //Set an timeout/sleep to make sure discover.json is the latest 
-setTimeout(function(){
+setTimeout(async function(){
     // Import the new discover.json
     let discoverjson = require('./discover.json');
     // Define a variable for the url of the xmltv data
-    let xmltvurl = `https://api.hdhomerun.com/api/xmltv?DeviceAuth=${discoverjson.DeviceAuth}`
-    console.log(xmltvurl);
-
-    (async () => {
-        const finishedDownload = promisify(stream.finished);
-        const writer = fs.createWriteStream('./xmltv.xml');
+    let xmltvurl = `https://api.hdhomerun.com/api/xmltv?DeviceAuth=${await discoverjson.DeviceAuth}`
+    // Define what to do with the data
+    let finishedDownload = promisify(stream.finished);
+    let writer = fs.createWriteStream('./xmltv.xml');
+    
+    // Define the request to api.hdhomerun.com
+    let response = await axios({
+      method: 'GET',
+      url: xmltvurl,
+      responseType: 'stream',
+    });
       
-        const response = await axios({
-          method: 'GET',
-          url: xmltvurl,
-          responseType: 'stream',
-        });
-      
-        response.data.pipe(writer);
-        await finishedDownload(writer);
-      })();
+    response.data.pipe(writer);
+    await finishedDownload(writer);
 
-}, 2500);
+    // Remove useless files
+    fs.unlinkSync(`./discover.json`)
+
+}, 251);
