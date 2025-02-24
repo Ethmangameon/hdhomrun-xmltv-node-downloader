@@ -1,0 +1,11 @@
+This is a node js script to automatically download xmltv data from the HD-Homrun API when you have a valid tv guide subscription.
+
+The intended install is intended for a jellyfin on an lxc or linux system; however it should be fine to use on windows if you know what you are doing.
+
+<h1> Install instructions </h1>
+
+Please, remove the .example file extension from the .env.example file.
+Then enter the IPV4 address of the HD-Homerun Tuner into the .env file. (You will need the tv guide subscription)
+Set a automatic service/cron (cannot do this on windows) entry to automatically start the run.sh script on a timer.
+Set the live-tv channel guide to this directory and the xmltv.xml file.
+Set a Scheduled task in Jellyfin to update channel guide for after this has been updated.
