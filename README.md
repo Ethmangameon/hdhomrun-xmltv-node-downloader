@@ -26,7 +26,7 @@ On a real note this slowly created a problem, I didn't wish to maintain this lik
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Ethmangameon/jellyfin-hdhomerun-xmltv/LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Ethmangameon/jellyfin-hdhomerun-xmltv/blob/main/LICENSE.md) file for details
 
 ## Acknowledgments
 
