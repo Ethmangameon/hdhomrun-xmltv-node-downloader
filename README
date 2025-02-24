@@ -1,6 +1,4 @@
-This is a node js script to automatically download xmltv data from the HD-Homrun API when you have a valid tv guide subscription.
-
-The intended install is intended for a jellyfin on an lxc or linux system; however it should be fine to use on windows if you know what you are doing.
+The install is intended for a jellyfin on an lxc or linux system, however it should be fine to use on windows if you know what you are doing.
 
 Install instructions
 
