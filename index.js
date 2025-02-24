@@ -10,14 +10,16 @@ import axios from 'axios';
 import { promisify } from 'util';
 dotenv.config();
 
-//Obtain the latest discover.json
+const timeout = Number(process.env.TIMEOUT)
+
+// Obtain the latest discover.json
 wget({
     url:  `http://${process.env.LOCALIP}/discover.json`,     
     dest: './',
-    timeout: 250       
+    timeout: timeout       
 });
 
-//Set an timeout/sleep to make sure discover.json is the latest 
+// Set an timeout/sleep to make sure discover.json is the latest 
 setTimeout(async function(){
     // Import the new discover.json
     let discoverjson = require('./discover.json');
@@ -37,7 +39,7 @@ setTimeout(async function(){
     response.data.pipe(writer);
     await finishedDownload(writer);
 
-    // Remove useless files
+    // Remove the now usless/outdated file
     fs.unlinkSync(`./discover.json`)
 
-}, 251);
+}, timeout + 1);
