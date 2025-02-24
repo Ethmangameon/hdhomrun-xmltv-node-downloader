@@ -1,7 +1,10 @@
 ### This script is in an attempt to solve a small problem ive been facing.
 I purchased the live-tv guide for my HD-Homerun, I expected jellyfin to allow me to easily use this data. I then later found out it does not, I had already paid for a year 😤.
+
 I did some googling and had found [this post](https://forum.silicondust.com/forum/viewtopic.php?t=72813). Apparently the api supports xmltv data and jellyfin uses xmltv data.
+
 So I *obviosly* started manually checking the discover.json to get the device auth code, and then manually creating a url, then updating the guide when it ran out. Oh, and on top of all that, I had also completly turned off automatic guide data retreval in jellyfin.
+
 This slowly created a problem since I didn't maintain this like I thought I would. So in response I decided to make this script.
 
 ### Install instructions
