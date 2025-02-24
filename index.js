@@ -3,9 +3,7 @@ import dotenv from "dotenv"
 import * as fs from 'fs';
 import * as stream from 'stream';
 import axios from 'axios';
-import {
-    promisify
-} from 'util';
+import { promisify } from 'util';
 dotenv.config();
 
 // Obtain the latest json from discover.json
