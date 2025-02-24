@@ -1,4 +1,3 @@
-// Import JSON objects from discover.json
 // Import fs for final output
 import dotenv from "dotenv"
 import * as fs from 'fs';
@@ -9,7 +8,7 @@ import {
 } from 'util';
 dotenv.config();
 
-// Obtain the latest discover.json
+// Obtain the latest json from discover.json
 let response = await axios({
     method: 'GET',
     url: `http://${process.env.LOCALIP}/discover.json`
@@ -17,11 +16,11 @@ let response = await axios({
 
 // Define a variable for the url of the xmltv data
 let xmltvurl = `https://api.hdhomerun.com/api/xmltv?DeviceAuth=${response.data.DeviceAuth}`
-// Define what to do with the data
+// Define what to do with the final data
 let finishedDownload = promisify(stream.finished);
 let writer = fs.createWriteStream('./xmltv.xml');
 
-// Define the request to api.hdhomerun.com
+// Define the request that will be made to api.hdhomerun.com
 let responsestream = await axios({
     method: 'GET',
     url: xmltvurl,
