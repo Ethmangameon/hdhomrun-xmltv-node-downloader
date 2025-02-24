@@ -30,5 +30,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 
 ## Acknowledgments
 
-I would like to thank the [Jellyfin Developers](https://github.com/jellyfin/jellyfin/graphs/contributors), for their work on [Jellyfin](https://jellyfin.org/).
+I would like to thank the [Jellyfin Developers](https://github.com/jellyfin/jellyfin/graphs/contributors), for their work on [Jellyfin](https://jellyfin.org/).</br>
 I would also like to thank SiliconDust and the people behind the [HD-HomeRun](https://www.silicondust.com/hdhomerun/) for making a great product.
