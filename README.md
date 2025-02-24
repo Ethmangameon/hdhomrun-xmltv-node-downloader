@@ -4,10 +4,9 @@ I did some googling and had found [this post](https://forum.silicondust.com/foru
 So I *obviosly* started manually checking the discover.json to get the device auth code, and then manually creating a url, then updating the guide when it ran out. Oh, and on top of all that, I had also completly turned off automatic guide data retreval in jellyfin.
 This slowly created a problem since I didn't maintain this like I thought I would. So in response I decided to make this script.
 
+### Install instructions
 > [!CAUTION]
 > The install is intended for jellyfin on an lxc or linux system, however it should be fine with modication, to use on windows/macos if you know what you are doing.
-
-### Install instructions
 
 Please, remove the .example file extension from the .env.example file.
 Then enter the IPV4 address for the HD-Homerun Tuner into the .env file. (You will need the tv guide subscription.)
