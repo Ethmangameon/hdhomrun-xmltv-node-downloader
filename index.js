@@ -41,6 +41,7 @@ try {
 
     // Console log downloading to Acknowledge the script doing anything
     console.log(`Downloading "xmltv.xml" from ${xmltvurl}`);
+    
     // Take response and write it to file
     responsestream.data.pipe(writer);
     await finishedDownload(writer);
