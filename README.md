@@ -12,7 +12,7 @@ This slowly created a problem since I didn't maintain this like I thought I woul
 2. Then enter the IPV4 address for the HD-Homerun Tuner into the .env file. (You will need the tv guide subscription.)
 3. Install NodeJS, then execute "run.sh" to ensure that node.js is working and, to make sure the script works. (It should produce a "xmltv.tv" file in this diretory.)
 4. Create a automatic service/cron entry to automatically start the run.sh script on a timer. (You may need to modify the run.sh script to your needs.)
-> [!IMPORTANT]
+> [!WARNING]
 > If you did not run the script the "xmltv.xml" file will not be in this directory.
 5. Set the live-tv channel guide to this directory and the xmltv.xml file.
 6. Set a Scheduled task in Jellyfin to update channel guide for after this has been updated.
