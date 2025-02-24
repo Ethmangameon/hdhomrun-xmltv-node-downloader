@@ -1,12 +1,11 @@
 {
+  "name": "jellyfin-hdhomrun-xmltv",
   "scripts": {
     "start": "node ./index.js"
   },
   "type": "module",
   "dependencies": {
     "axios": "^1.7.9",
-    "dotenv": "^16.4.7",
-    "fs": "^0.0.1-security",
-    "node-wget": "^0.4.3"
+    "dotenv": "^16.4.7"
   }
 }
