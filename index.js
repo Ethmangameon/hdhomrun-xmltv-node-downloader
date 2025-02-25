@@ -28,8 +28,8 @@ try {
 
 } catch (err) {
 
-    // Console log errors and helpfull Human Readable text possible issues.
-    console.log('An error occurred obtaining the DeviceAuth from your hdhomerun.');
+    // Console log errors and helpful human-readable text possible issues.
+    console.log('An error occurred obtaining the DeviceAuth from your HDHomeRun.');
     console.log(`The Error that occured\n"${err}"`);
     process.exit(101);
 
@@ -50,9 +50,9 @@ try {
 
 } catch (err) {
 
-    // Console log errors and helpfull Human Readable text possible issues.
-    console.log('An error occurred obtaining the data from the hdhomrun api.');
-    console.log('Or an error occured writing the file "./xmltv.xml".');
+    // Console log errors and helpful human-readable text possible issues.
+    console.log('An error occurred obtaining the data from the HDHomeRun api.');
+    console.log('Or an error occurred writing the file "./xmltv.xml".');
     console.log(`The Error that occured\n"${err}"`);
     process.exit(102);
 
@@ -60,7 +60,7 @@ try {
 
 // Only console log additional info if it is set in .env
 if (output) {
-// Console log Goobye message to make sure the user knows the script is done executing.
+// Console log Goodbye message to make sure the user knows the script is done executing.
 console.log('Please ensure your "xmltv.xml" file is intact and ready!');
 console.log('Goodbye! ✌️');
 process.exit(0);
