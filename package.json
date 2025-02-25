@@ -1,5 +1,5 @@
 {
-  "name": "jellyfin-hdhomrun-xmltv",
+  "name": "hdhomrun-xmltv-node-downloader",
   "scripts": {
     "start": "node ./index.js"
   },
