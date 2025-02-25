@@ -4,7 +4,7 @@
 
 1. Please, remove the .example file extension from the env.example file.
 2. Then enter the IPV4 address for the HD-Homerun Tuner into the .env file.<br/>(You will need the tv guide subscription.)
-3. Install [NodeJS](https://nodejs.org/en), then execute "run.sh" to ensure that node.js is working and, to make sure the script works.<br//>(It should produce an "xmltv.tv" file in the root directory.)
+3. Install [NodeJS](https://nodejs.org/en), then execute "run.sh" to ensure that node.js is working and, to make sure the script works.<br/>(It should produce an "xmltv.tv" file in the root directory.)
 5. Create an automatic service/cron entry to automatically start the run.sh script on a schedule.<br/>(You may need to modify the "run.sh" script to fit your needs.)
 > [!WARNING]
 > If you did not run the script the "xmltv.xml" file will not be in this directory.
