@@ -12,7 +12,7 @@
 6. Set a Scheduled task in Jellyfin to update the channel guide after this.
 
 ## This script is in an attempt to solve a small problem I've been facing.
-I purchased the live TV guide for my HD-Homerun, and I expected Jellyfin to allow me to easily use this data. I then later found out it does not, I had already paid for a year 😤.
+I purchased the live TV guide for my HD-Homerun, and I expected Jellyfin to allow me to use this data. I found out it did not, I had already paid for a year 😤.
 
 I did some googling and found [this post](https://forum.silicondust.com/forum/viewtopic.php?t=72813). The API supports xmltv data and Jellyfin uses xmltv data.
 
