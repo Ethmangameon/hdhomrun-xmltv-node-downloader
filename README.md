@@ -2,7 +2,7 @@
 > [!NOTE]
 > The install is intended for jellyfin on an lxc or linux system, however it should be fine with modication, to use on windows/macos if you know what you are doing.
 
-1. Please, remove the .example file extension from the .env.example file.
+1. Please, remove the .example file extension from the env.example file.
 2. Then enter the IPV4 address for the HD-Homerun Tuner into the .env file.<br/>(You will need the tv guide subscription.)
 3. Install [NodeJS](https://nodejs.org/en), then execute "run.sh" to ensure that node.js is working and, to make sure the script works.<br/>(It should produce a "xmltv.tv" file in the root diretory.)
 5. Create a automatic service/cron entry to automatically start the run.sh script on a schedule.<br/>(You may need to modify the "run.sh" script to fit your needs.)
