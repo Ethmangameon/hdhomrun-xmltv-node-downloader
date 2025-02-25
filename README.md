@@ -16,7 +16,7 @@ I purchased the live TV guide for my HD-Homerun, and I expected Jellyfin to allo
 
 I did some googling and found [this post](https://forum.silicondust.com/forum/viewtopic.php?t=72813). The API supports xmltv data and Jellyfin uses xmltv data.
 
-So I *obviosly* started manually checking the discover.json to get the device auth code, and then manually creating a URL updating the guide when it ran out. Oh, and, I had completely turned off automatic guide data retrieval in Jellyfin.
+*So I obviosly started manually checking the discover.json to get the device auth code, and then manually creating a URL updating the guide when it ran out. Oh, and, I had completely turned off automatic guide data retrieval in Jellyfin.*
 
 On a real note, this slowly created a problem, I didn't wish to maintain this manually. So in response, I decided to make this script.
 
