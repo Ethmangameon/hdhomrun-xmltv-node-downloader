@@ -1,6 +1,6 @@
 ### Install instructions
 > [!NOTE]
-> The install is intended for Jellyfin on an lxc or Linux system, it should be fine with Windows/macOS if you know what you are doing.<br>This script will also work without Jellyfin if you need xmltv data for something else.
+> The install is intended for Jellyfin on an lxc or Linux system, it should be fine with Windows/macOS if you know what you are doing.<br>This script will also work without Jellyfin, if you need xmltv data from your HD-Homerun for something else.
 
 1. Please, remove the .example file extension from the env.example file.
 2. Then enter the IPV4 address for the HD-Homerun Tuner into the .env file and any other environment variables.<br/>(You will need the tv guide subscription.)
