@@ -27,8 +27,3 @@ On a real note, this slowly created a problem, I didn't wish to maintain this ma
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/Ethmangameon/jellyfin-hdhomerun-xmltv?tab=MIT-1-ov-file) file for details
-
-## Acknowledgments
-
-I would like to thank the [Jellyfin Developers](https://github.com/jellyfin/jellyfin/graphs/contributors), for their work on [Jellyfin](https://jellyfin.org/).</br>
-I would also like to thank SiliconDust and the people behind the [HD-HomeRun](https://www.silicondust.com/hdhomerun/) for making a great product.
