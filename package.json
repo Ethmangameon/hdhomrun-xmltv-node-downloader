@@ -3,5 +3,8 @@
   "scripts": {
     "start": "node ./index.js"
   },
-  "type": "module"
+  "type": "module",
+  "author": "Ethan Scott Hedden",
+  "license": "MIT",
+  "description": "This is a node js script to download xmltv data from the HD-Homrun API when you have a valid tv guide subscription."
 }
